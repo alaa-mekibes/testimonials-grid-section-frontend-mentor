@@ -51,7 +51,7 @@ main {
     grid-template-areas:
     "daniel daniel jonathan alaa"
     "mohammed patrick patrick alaa";
-    gap: 40px
+    gap: 1rem
 }
 @media (max-width: 1200px) {
     main {
@@ -60,7 +60,6 @@ main {
         "daniel daniel jonathan"
         "mohammed patrick patrick"
         "alaa alaa alaa";
-        gap: 1.25rem
     }
 }
 @media (max-width: 47.9375rem) {
@@ -99,7 +98,7 @@ main .card .author span {
 }
 main .card .text p {
     color: var(--White);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: var(--margin-b)
 }

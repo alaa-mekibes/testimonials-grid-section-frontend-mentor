@@ -1,0 +1,142 @@
+/* Start Variables */
+:root {
+        /* Colors */
+
+    /* Primary */
+    
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%); /*girls name*/
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+    
+    /* Neutral */
+    
+--Light-gray: hsl(0, 0%, 81%); /*Names*/
+--Light-grayish-blue: hsl(210, 46%, 95%); /*back*/
+        /* Body Copy */
+
+--FontSize: .8125rem;
+--margin-b: .9375rem
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: "Barlow Semi Condensed", serif;
+    min-height: 100svh;
+    background-color: var(--Light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.375rem 6.25rem
+}
+@media (max-width: 75rem) {
+    body {
+        padding: 6.25rem 3.125rem
+    }
+}
+@media (max-width: 47.9375rem) {
+    body {
+        padding: 3.125rem 1.25rem
+    }
+}
+/* End Global Rules */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(12.5rem, auto));
+    grid-template-areas:
+    "daniel daniel jonathan alaa"
+    "mohammed patrick patrick alaa";
+    gap: 40px
+}
+@media (max-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, minmax(12.5rem, auto));
+        grid-template-areas:
+        "daniel daniel jonathan"
+        "mohammed patrick patrick"
+        "alaa alaa alaa";
+        gap: 1.25rem
+    }
+}
+@media (max-width: 47.9375rem) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+}
+main .card {
+    border-radius: .625rem;
+    padding: 1.25rem 1.875rem
+}
+main .card .author {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: var(--margin-b)
+}
+main .card .author img {
+    max-width: 100%;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: .1875rem solid hsla(0, 0%, 81%, 0.5)
+}
+h1, span {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--Light-gray);
+    font-size: var(--FontSize)
+}
+main .card .author span {
+    display: block;
+    opacity: 50%
+}
+main .card .text p {
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--margin-b)
+}
+main .card .text q {
+    font-size: var(--FontSize);
+    color: var(--Light-gray);
+    opacity: 70%
+}
+main .alaa .author .info h1, main .alaa .author .info span,
+main .mohammed .author .info h1, main .mohammed .author .info span,
+main .alaa .text p, main .mohammed .text p,
+main .alaa .text q, main .mohammed .text q {
+    color: var(--Very-dark-grayish-blue)
+}
+main .daniel {
+    grid-area: daniel;
+    background-color: var(--Moderate-violet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%
+}
+main .jonathan {
+    grid-area: jonathan;
+    background-color: var(--Very-dark-grayish-blue)
+}
+main .mohammed {
+    grid-area: mohammed;
+    background-color: var(--White)
+}
+main .patrick {
+    grid-area: patrick;
+    background-color: var(--Very-dark-blackish-blue)
+}
+main .patrick .author img {
+    border-color: var(--Moderate-violet)
+}
+main .alaa {
+    grid-area: alaa;
+    background-color: var(--White)
+}

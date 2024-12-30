@@ -23,11 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.png)
+![](./Screenshot-D.png)
+
+![](./Screenshot-M.png)
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/four-card-feature-section-using-flex-box-YxNwIkvrvu
+- Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-using-grid-and-flex-box-IHG2TqGujl
 - Live Site URL: https://alaa-mekibes.github.io/testimonials-grid-section-challenge9
 
 ## My process

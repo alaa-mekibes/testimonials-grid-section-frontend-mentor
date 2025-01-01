@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-using-grid-and-flex-box-IHG2TqGujl
-- Live Site URL: https://alaa-mekibes.github.io/testimonials-grid-section-challenge9
+- Live Site URL: https://alaa-mekibes.github.io/testimonials-grid-section-frontend-mentor
 
 ## My process
 

@@ -74,9 +74,11 @@ h1, span {
     color: var(--Light-gray);
     opacity: 70%
 }
-.alaa :where(h1, span, p, q),
-.mohammed :where(h1, span, p, q) {
-    color: var(--Very-dark-grayish-blue)
+.alaa .author .info :where(h1, span),
+.mohammed .author .info :where(h1, span),
+.alaa .text :where(p, q),
+.mohammed .text :where(p, q) {
+    color: var(--Very-dark-grayish-blue);
 }
 .daniel {
     grid-area: daniel;
